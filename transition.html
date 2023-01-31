@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            -webkit-transition:width 2s; /* for safari 3.1 to 6.0*/
+            transition:all 8s ease 1s;
+        }
+
+/*transition:transition-property transition-duration transition-timing-function transition-delay
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end */
+
+div:hover{
+    width:300px;
+    height:300px;
+}
+
+    </style>
+</head>
+<body>
+    <p><b>Note:</b>This is example does not work in internet explorer 9 and earlier versions.</p>
+    <div>
+    </div>
+    <p>Hover over the div element above,to see the transition effect.</p>
+</body>
+</html>
